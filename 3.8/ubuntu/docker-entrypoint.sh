@@ -295,7 +295,7 @@ rabbit_env_config() {
 }
 
 if [ "$1" = 'rabbitmq-server' ] && [ "$shouldWriteConfig" ]; then
-	rabbit_set_config 'loopback_users.guest' 'false'
+	#rabbit_set_config 'loopback_users.guest' 'false'
 
 	# determine whether to set "vm_memory_high_watermark" (based on cgroups)
 	memTotalKb=
